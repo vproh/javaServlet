@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Student adding</title>
+	<style type="text/css">
+		button {
+			padding: 10px;
+			font-size: 14px;
+			border-radius: 5%;
+			margin: 3px;
+			background-color: transparent;
+			cursor: pointer;
+			border-color: gray;
+		}
+		button:hover{
+			background-color: grey;
+			color: white;
+		}
+		td {
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<form action="StudentHandler" method="GET">
+	    <table>
+	      <tr>
+	        <td>First name:</td>
+	        <td><input type="text" name="firstName"></td>
+	      </tr>
+	      <tr>
+	        <td>Last name: </td>
+	        <td><input type="text" name="lastName"></td>
+	      </tr>
+	      <tr>
+	        <td>Birthday: </td>
+	        <td><input type="text" name="birthDay"></td>
+	      </tr>
+	      <tr>
+	        <td>Faculty </td>
+	        <td><input type="text" name="faculty"></td>
+	      </tr>
+	      <tr>
+	        <td>Leader </td>
+	        <td><input type="checkbox" name="leader"></td>
+	      </tr>
+	      <tr>
+	        <td>Ship </td>
+	        <td><input type="checkbox" name="ship"></td>
+	      </tr>
+	      <tr>
+	        <td>Missings </td>
+	        <td><input type="number" name="missings"></td>
+	      </tr>
+	      <tr>
+	        <td>Email</td>
+	        <td><input type="email" name="email"></td>
+	      </tr>
+	      <tr>
+	        <td>Phone number </td>
+	        <td><input type="text" name="phoneNumber"></td>
+	      </tr>
+	    </table>
+	    <br>
+	    <button type="submit" value="addStudent" name="action">Add student</button>
+	</form> 
+	<a href="StudentHandler"><button>Back</button></a>
+</body>
+</html>

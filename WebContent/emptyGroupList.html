@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Add new group</title>
+		<style type="text/css">
+			.add {
+				padding: 10px;
+				font-size: 16px;
+				border-radius: 5%;
+				margin: 3px;
+				background-color: transparent;
+				cursor: pointer;
+				border-color: gray;
+			}
+			.add:hover{
+				background-color: grey;
+				color: white;
+			}
+		</style>
+	</head>
+<body>
+	<div align="center">
+		<h3>There are no groups for viewing</h3>
+		<form name="groupAction" method="POST" action="GroupHandler" enctype="multipart/form-data">
+			<input type="file" name="file" accept="text/plain, text/json, text/xml">
+			<input class="add" type="submit" name="action" value="Add"><br>
+		</form>
+	</div>
+</body>
+</html>

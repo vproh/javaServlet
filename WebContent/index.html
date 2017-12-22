@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login page</title>
+	<style>
+		#submit { 
+			margin: 5px 0 0 0; 
+			width: 150px; 
+			min-width: 100px;
+			height: 40px; 
+			font-size: 14px; 
+			color: #ffffff; 
+			background-color: grey;
+		}
+		#submit:hover {
+			background-color: green;
+			cursor: pointer;
+		}
+		.mainDiv {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			text-align: center;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			padding: 10px;
+		}
+
+		body {
+			background-color: #E0E0E0;
+			margin: 0;
+			padding: 0;
+		}
+
+		input {
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 8%;
+		}
+	</style>
+</head>
+<body>
+	<header></header>
+	<div>
+		<div class="mainDiv">
+			<p style="font-size: 18px;">Please enter your login and password:</p>
+			<form method="POST" action="GroupHandler">
+				<input name="userName" type="text" size="20" placeholder="login" required><br>
+				<span id="username"></span>
+				<input name="password" type="password" size="20" placeholder="password" required><br>
+				<span id="passwrd"></span>
+				<input id="submit" type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>
